@@ -12,7 +12,7 @@ if ($pharFile == '') {
 $GLOBALS['phorkie']['cfg'] = array(
     'debug'         => false,
     'git'           => array(
-        'public'    => '%BASEURL%' . 'repos/git/',
+        'public'    => null, // '%BASEURL%' . 'repos/git/',
         'private'   => null,
     ),
     'cachedir'      => $phorkieDir . 'cache/',
