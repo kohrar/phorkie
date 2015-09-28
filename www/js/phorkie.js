@@ -52,3 +52,10 @@ function toggleAdditional(elem, time)
     jt.parents('.row-fluid').children('.additional').slideToggle(time);
     //jt.parents('.row-fluid').children('.additional').animate(time);
 }
+
+$(function() {
+	$('.clickselect').on('click', function() {
+		$(this).select();
+	});
+});
+

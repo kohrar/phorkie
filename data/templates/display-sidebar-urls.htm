@@ -1,8 +1,8 @@
 <label id="url-embed" for="url-embed-input"><b>Embed</b> HTML code</label>
-<input id="url-embed-input" type="text" class="fullwidthtext" value="{{htmlhelper.getRepositoryEmbedCode(repo)}}"/>
+<input id="url-embed-input" type="text" class="fullwidthtext clickselect" value="{{htmlhelper.getRepositoryEmbedCode(repo)}}"/>
 
 <label id="mediawiki-embed" for="mediawiki-embed-input"><b>Embed</b> MediaWiki code</label>
-<input id="mediawiki-embed-input" type="text" class="fullwidthtext" value="{{htmlhelper.getMediaWikiEmbedCode(repo)}}"/>
+<input id="mediawiki-embed-input" type="text" class="fullwidthtext clickselect" value="{{htmlhelper.getMediaWikiEmbedCode(repo)}}"/>
 
 {% if repo.getCloneURL(true) %}
 <label id="url-public" for="url-public-input"><b>Public</b> clone URL</label>
