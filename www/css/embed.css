@@ -9,9 +9,8 @@
 }
 .phork-content {
     padding: 0.6ex;
-}
-.phork-content > .code {
-    overflow-x: auto;
+	max-height: 500px;
+	overflow: scroll;
 }
 .phork-file .code pre {
     border: none;
