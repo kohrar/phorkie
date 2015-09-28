@@ -75,6 +75,14 @@ class HtmlHelper
         return $logged_in;
     }
 
+	/*
+	 * Retrieves the mediawiki embed code.
+	 */
+    public function getMediaWikiEmbedCode(Repository $repo)
+    {
+        return '<phorkie>' . $repo->getLink('embed', null, true) . '</phorkie>';
+    }
+
     public function getRepositoryEmbedCode(Repository $repo)
     {
         return '<script src="' . $repo->getLink('embed', null, true) . '"'
